@@ -1,0 +1,45 @@
+body {
+    background-image: linear-gradient(rgb(26, 37, 55) 0px, rgb(54, 64, 81) 100%);
+    color: white;
+}
+
+.eggsFather {
+    display: flex;
+}
+
+.title {
+    margin-left: 40%;
+}
+
+.eggImages img {
+    width: 150px;
+    height: 150px;
+}
+
+.eggImages {
+    transition: 0.5s ease;
+}
+
+.eggImages:hover {
+    -webkit-transform: translateY(-10deg);
+    -ms-transform: translateY(-10deg);
+    transform: translateY(-10px);
+    transition: 0.5s ease;
+}
+
+.eggsText {
+    display: flex;
+}
+
+.eggsChild {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .eggsFather {
+        flex-direction: column;
+    }
+}
