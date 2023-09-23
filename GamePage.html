@@ -1,107 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="GameStyle.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Butterfly_Egg.png?v=1695248202659"
-    />
-    <title>Indo ai Eggs</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="title">Egg open simulator</h1>
-      <h2 id="contador-coins">Coins: <span id="coins">0</span></h2>
-      <div class="contador">
-        <a href="javascript:void(0)" class="contadorCoins" onclick="contar()"
-          >Click</a
-        >
+
+<head>
+  <link rel="stylesheet" href="GameStyle.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png"
+    href="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Butterfly_Egg.png?v=1695248202659" />
+  <title>Indo ai Eggs</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Egg open simulator</h1>
+    <h2 id="contador-coins">AliCoins: <span id="coins">0</span></h2>
+    <div class="contador">
+      <br>
+      <div class="wrapper">
+        <button class="contadorCoins" onclick="contar()">
+          Earn!
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-      <div id="Main">
-        <div class="eggsFather">
-          <div class="eggsChild">
-            <h2 class="eggsText">Basic egg</h2>
-            <p>2 coins</p>
-            <div class="eggImages">
-              <a href="javascript:void(0)" onclick="basicEgg()"
-                ><img
-                  src="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Common_Egg.png?v=1695098553485"
-                />
-              </a>
-            </div>
-            <p>60% indo ali</p>
-            <p>25% indo ali emo</p>
-            <p>10% voltando ali</p>
-            <p>5% baby indo ali</p>
+    </div>
+    <br>
+    <br>
+    <div id="Main">
+      <div class="eggsFather">
+        <div class="eggsChild">
+          <h2 class="eggsText">Basic egg</h2>
+          <p>2 coins</p>
+          <div class="eggImages">
+            <a href="javascript:void(0)" onclick="basicEgg()"><img
+                src="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Common_Egg.png?v=1695098553485" />
+            </a>
           </div>
-          <div class="eggsChild">
-            <h2 class="eggsText">Uncommon egg</h2>
-            <p>5 coins</p>
-            <div class="eggImages">
-              <a href="javascript:void(0)" onclick="uncommonEgg()"
-                ><img
-                  src="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Unique_Egg.png?v=1695186644060"
-                />
-              </a>
-            </div>
-            <p>65% indo ali mine</p>
-            <p>20% indo ali one piece</p>
-            <p>10% indo ali bolsonaro</p>
-            <p>5% indo ali lula</p>
+          <p>60% indo ali</p>
+          <p>25% indo ali emo</p>
+          <p>10% voltando ali</p>
+          <p>5% baby indo ali</p>
+        </div>
+        <div class="eggsChild">
+          <h2 class="eggsText">Uncommon egg</h2>
+          <p>5 coins</p>
+          <div class="eggImages">
+            <a href="javascript:void(0)" onclick="uncommonEgg()"><img
+                src="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Unique_Egg.png?v=1695186644060" />
+            </a>
           </div>
-          <div class="eggsChild">
-            <h2 class="eggsText">Rare egg</h2>
-            <p>8 coins</p>
-            <div class="eggImages">
-              <a href="javascript:void(0)" onclick="rareEgg()"
-                ><img
-                  src="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Rare_Egg.png?v=1695186618184"
-                />
-              </a>
-            </div>
-            <p>50% print do indo ali</p>
-            <p>40% indo ali bizarro</p>
-            <p>9% indo ali realista</p>
-            <p>1% indo realista shiny</p>
+          <p>65% indo ali mine</p>
+          <p>20% indo ali one piece</p>
+          <p>10% indo ali bolsonaro</p>
+          <p>5% indo ali lula</p>
+        </div>
+        <div class="eggsChild">
+          <h2 class="eggsText">Rare egg</h2>
+          <p>8 coins</p>
+          <div class="eggImages">
+            <a href="javascript:void(0)" onclick="rareEgg()"><img
+                src="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Rare_Egg.png?v=1695186618184" />
+            </a>
           </div>
-          <div class="eggsChild">
-            <h2 class="eggsText">Epic egg</h2>
-            <p>10 coins</p>
-            <div class="eggImages">
-              <a href="javascript:void(0)" onclick="epicEgg()"
-                ><img
-                  src="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Epic_Egg.png?v=1695186612459"
-                />
-              </a>
-            </div>
-            <p>80% indo ali vascaino</p>
-            <p>15% indo ali gremista</p>
-            <p>2.5% indo ali shiny</p>
-            <p>2.5% indo ali whatsapp</p>
+          <p>50% print do indo ali</p>
+          <p>40% indo ali bizarro</p>
+          <p>9% indo ali realista</p>
+          <p>1% indo realista shiny</p>
+        </div>
+        <div class="eggsChild">
+          <h2 class="eggsText">Epic egg</h2>
+          <p>10 coins</p>
+          <div class="eggImages">
+            <a href="javascript:void(0)" onclick="epicEgg()"><img
+                src="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Epic_Egg.png?v=1695186612459" />
+            </a>
           </div>
-          <div class="eggsChild">
-            <h2 class="eggsText">Legendary egg</h2>
-            <p>15 coins</p>
-            <div class="eggImages">
-              <a href="javascript:void(0)" onclick="legendaryEgg()"
-                ><img
-                  src="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Legendary_Egg.png?v=1695186632202"
-                />
-              </a>
-            </div>
-            <p>88% calling indo ali</p>
-            <p>5% indo ali paiaço</p>
-            <p>2.5% indo ali drogado</p>
-            <p>0.5% não consigo ir ali</p>
+          <p>80% indo ali vascaino</p>
+          <p>15% indo ali gremista</p>
+          <p>2.5% indo ali shiny</p>
+          <p>2.5% indo ali whatsapp</p>
+        </div>
+        <div class="eggsChild">
+          <h2 class="eggsText">Legendary egg</h2>
+          <p>15 coins</p>
+          <div class="eggImages">
+            <a href="javascript:void(0)" onclick="legendaryEgg()"><img
+                src="https://cdn.glitch.global/4b3f92e6-0900-4ee8-a6f8-bf758e845c66/Legendary_Egg.png?v=1695186632202" />
+            </a>
           </div>
+          <p>88% calling indo ali</p>
+          <p>5% indo ali paiaço</p>
+          <p>2.5% indo ali drogado</p>
+          <p>0.5% não consigo ir ali</p>
         </div>
       </div>
-      <br />
-      <br />
     </div>
-    <script src="EggsClass.js"></script>
-  </body>
+  </div>
+  <script src="EggsClass.js"></script>
+</body>
+
 </html>
